@@ -20,7 +20,7 @@ namespace Raiders_Jester
 
             
             YamlSerialization.Config_Yaml();
-            Console.WriteLine(YamlSerialization.offlinemessage);
+            
             await client.LoginAsync(TokenType.Bot, YamlSerialization.token);
             await client.StartAsync();
 
@@ -57,6 +57,12 @@ namespace Raiders_Jester
                 Serverstatus.Serverping_DCSServer();
 
                 message.Channel.SendMessageAsync(message.Author.Mention + " Pinging Server... " + "\n" + Serverstatus.serverstat_dcsserver);
+            }
+
+            if (command.Equals("help"))
+            {
+                message.Channel.SendMessageAsync(message.Author.Mention + " ***HELP!*** " + "\n" + "**Commands:**" + "\n" + "*!help* - Displays all the commands for this bot and the function" + "\n" + "*!server* - Connects (or at least attempts to if online) to the 332nd Raiders server to determine its online/offline state");
+
             }
 
             return Task.CompletedTask;
