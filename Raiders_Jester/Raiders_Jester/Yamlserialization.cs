@@ -7,14 +7,17 @@ namespace Raiders_Jester
 
     public class YamlSerialization
     {
-        public static string contents;
+        
+        public static string contents; 
         public static string token;
         public static string ipaddress;
         public static string port;
         public static string onlinemessage;
         public static string offlinemessage;
-        public static string str_json_output;
         public static string yamlconfigfilename = "Config.yaml";
+        
+
+        
 
         public static void Config_Yaml()
         {
@@ -35,22 +38,47 @@ namespace Raiders_Jester
             {
                 using (StreamReader sr = new StreamReader(yamlconfigfilename))
                 {
-                    contents = sr.ReadLine();
+                    string[] contentarray = new string[5];
+
+                    for (int i = 0; i < 5; i++)
+                    {
+                        var eachline = sr.ReadLine();
+                        contentarray[i] = eachline;
+
+                        contents = contentarray[i];
+
+                        var input = new StringReader(contents);
+                        var deserializer = new DeserializerBuilder().Build();
+                        var botconfigcontents = deserializer.Deserialize<Yamlconfig.botconfig>(input);
+                        token = botconfigcontents.token;
+                        ipaddress = botconfigcontents.ipaddress;
+                        port = botconfigcontents.port;
+                        onlinemessage = botconfigcontents.onlinemessage;
+                        offlinemessage = botconfigcontents.offlinemessage;
+
+                        
+                    }
+
+
+
+                    
+
+
+
+
+                    
+
+                    
+                    
+                    
+                    
+
 
 
                 }
-                var input = new StringReader(contents);
 
-                var deserializer = new DeserializerBuilder().Build();
-                var botconfigcontents = deserializer.Deserialize<Yamlconfig.botconfig>(input);
-                token = botconfigcontents.token;
-                ipaddress = botconfigcontents.ipaddress;
-                port = botconfigcontents.port;
-                onlinemessage = botconfigcontents.onlinemessage;
-                offlinemessage = botconfigcontents.offlinemessage;
-                
-                
-                
+
+
 
 
             }

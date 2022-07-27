@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace Raiders_Jester
 {
+
     class Program
     {
         public static void Main(string[] args)
@@ -17,8 +18,9 @@ namespace Raiders_Jester
             client.MessageReceived += CommandHandler;
             client.Log += Log;
 
+            
             YamlSerialization.Config_Yaml();
-
+            Console.WriteLine(YamlSerialization.offlinemessage);
             await client.LoginAsync(TokenType.Bot, YamlSerialization.token);
             await client.StartAsync();
 
