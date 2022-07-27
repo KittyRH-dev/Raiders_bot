@@ -16,7 +16,7 @@ namespace Raiders_Jester
                 string address = YamlSerialization.ipaddress;
                 int port = Convert.ToInt32(YamlSerialization.port);
                 
-                if (tcpClient.ConnectAsync(address, port).Wait(1000))
+                if (tcpClient.ConnectAsync("", port).Wait(1000))
                 {
 
                     serverstat_dcsserver = "332nd Raiders Server is online";
