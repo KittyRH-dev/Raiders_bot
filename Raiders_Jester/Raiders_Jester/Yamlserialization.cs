@@ -9,9 +9,10 @@ namespace Raiders_Jester
     {
         public static string contents;
         public static string token;
-        public static string hostname;
         public static string ipaddress;
         public static string port;
+        public static string onlinemessage;
+        public static string offlinemessage;
         public static string str_json_output;
         public static string yamlconfigfilename = "Config.yaml";
 
@@ -21,7 +22,9 @@ namespace Raiders_Jester
             {
                 token = "insert bot token here",
                 ipaddress = "insert ipaddress here",
-                port = "insert port here"
+                port = "insert port here",
+                onlinemessage = "insert message here",
+                offlinemessage = "insert message here"
                 
 
             };
@@ -43,6 +46,8 @@ namespace Raiders_Jester
                 token = botconfigcontents.token;
                 ipaddress = botconfigcontents.ipaddress;
                 port = botconfigcontents.port;
+                onlinemessage = botconfigcontents.onlinemessage;
+                offlinemessage = botconfigcontents.offlinemessage;
                 
                 
                 
