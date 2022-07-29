@@ -1,0 +1,17 @@
+C:\Users\peter\Documents\test\v1.0.0\Raiders_Jester.exe
+C:\Users\peter\Documents\test\v1.0.0\Raiders_Jester.dll
+C:\Users\peter\Documents\test\v1.0.0\Raiders_Jester.deps.json
+C:\Users\peter\Documents\test\v1.0.0\Raiders_Jester.runtimeconfig.json
+C:\Users\peter\Documents\test\v1.0.0\Raiders_Jester.pdb
+C:\Users\peter\Documents\test\v1.0.0\Discord.Net.Commands.dll
+C:\Users\peter\Documents\test\v1.0.0\Discord.Net.Core.dll
+C:\Users\peter\Documents\test\v1.0.0\Discord.Net.Interactions.dll
+C:\Users\peter\Documents\test\v1.0.0\Discord.Net.Rest.dll
+C:\Users\peter\Documents\test\v1.0.0\Discord.Net.Webhook.dll
+C:\Users\peter\Documents\test\v1.0.0\Discord.Net.WebSocket.dll
+C:\Users\peter\Documents\test\v1.0.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\peter\Documents\test\v1.0.0\Newtonsoft.Json.dll
+C:\Users\peter\Documents\test\v1.0.0\System.Interactive.Async.dll
+C:\Users\peter\Documents\test\v1.0.0\System.Linq.Async.dll
+C:\Users\peter\Documents\test\v1.0.0\System.Reactive.dll
+C:\Users\peter\Documents\test\v1.0.0\YamlDotNet.dll
