@@ -29,57 +29,25 @@ namespace Raiders_Jester
                 onlinemessage = "insert message here",
                 offlinemessage = "insert message here"
                 
-
             };
-
-            
 
             if (File.Exists(yamlconfigfilename))
             {
                 using (StreamReader sr = new StreamReader(yamlconfigfilename))
                 {
-                    string[] contentarray = new string[5];
 
-                    for (int i = 0; i < 5; i++)
-                    {
-                        var eachline = sr.ReadLine();
-                        contentarray[i] = eachline;
-
-                        contents = contentarray[i];
-
-                        var input = new StringReader(contents);
-                        var deserializer = new DeserializerBuilder().Build();
-                        var botconfigcontents = deserializer.Deserialize<Yamlconfig.botconfig>(input);
-                        token = botconfigcontents.token;
-                        ipaddress = botconfigcontents.ipaddress;
-                        port = botconfigcontents.port;
-                        onlinemessage = botconfigcontents.onlinemessage;
-                        offlinemessage = botconfigcontents.offlinemessage;
-
-                        
-                    }
-
-
-
+                    contents = sr.ReadToEnd();
                     
-
-
-
-
-                    
-
-                    
-                    
-                    
-                    
-
-
+                    var input = new StringReader(contents);
+                    var deserializer = new DeserializerBuilder().Build();
+                    var botconfigcontents = deserializer.Deserialize<Yamlconfig.botconfig>(input);
+                    token = botconfigcontents.token;
+                    ipaddress = botconfigcontents.ipaddress;
+                    port = botconfigcontents.port;
+                    onlinemessage = botconfigcontents.onlinemessage;
+                    offlinemessage = botconfigcontents.offlinemessage;
 
                 }
-
-
-
-
 
             }
 
