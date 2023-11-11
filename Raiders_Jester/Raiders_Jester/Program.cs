@@ -32,7 +32,7 @@ namespace Raiders_Jester
             return Task.CompletedTask;
         }
 
-        private async Task<Task> CommandHandler(SocketMessage message)
+        private Task CommandHandler(SocketMessage message)
         {
             string command = "";
             int lengthOfCommand = -1;
@@ -50,13 +50,11 @@ namespace Raiders_Jester
 
             command = message.Content.Substring(1, lengthOfCommand - 1).ToLower();
 
-           
-
             if (command.Equals("server"))
             {
                 Serverstatus.Serverping_DCSServer();
 
-                await message.Channel.SendMessageAsync(message.Author.Mention + " Pinging Server... " + "\n" + Serverstatus.Serverping_DCSServer);
+                message.Channel.SendMessageAsync(message.Author.Mention + " Pinging Server... " + "\n" + Serverstatus.Serverping_DCSServer);
             }
 
             return Task.CompletedTask;
@@ -65,3 +63,4 @@ namespace Raiders_Jester
 
     }
 }
+

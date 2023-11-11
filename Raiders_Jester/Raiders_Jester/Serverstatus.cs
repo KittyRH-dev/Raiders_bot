@@ -9,28 +9,32 @@ namespace Raiders_Jester
     public class Serverstatus
     {
         public static string serverstat_dcsserver;
-        public static int port = Convert.ToInt32(YamlSerialization.port);
-
-        public static async void Serverping_DCSServer()
+        public static void Serverping_DCSServer()
         {
-            TcpClient tcpClient = new TcpClient();
+            using (TcpClient tcpClient = new TcpClient())
+            {
+                string address = YamlSerialization.ipaddress;
+                int port = Convert.ToInt32(YamlSerialization.port);
+                
+                if (tcpClient.ConnectAsync(address, port).Wait(1000))
+                {
 
-            var address = IPAddress.Parse(YamlSerialization.ipaddress);
+                    serverstat_dcsserver = "332nd Raiders Server is online";
+                    tcpClient.Close();
+                }
+
+                else
+                {
+
+                    serverstat_dcsserver = "332nd Raiders Server is offline";
+                }
+            }
 
             
+            
+            
 
-            if (tcpClient.ConnectAsync(address, port).Wait(1000))
-            {
-                
-                serverstat_dcsserver = "332nd Raiders Server is online";
-                tcpClient.Close();
-            }
-
-            else
-            {
-                
-                serverstat_dcsserver = "332nd Raiders Server is offline";
-            }
+            
 
 
 
