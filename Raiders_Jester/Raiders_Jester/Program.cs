@@ -54,7 +54,7 @@ namespace Raiders_Jester
             {
                 Serverstatus.Serverping_DCSServer();
 
-                message.Channel.SendMessageAsync(message.Author.Mention + " Pinging Server... " + "\n" + Serverstatus.Serverping_DCSServer);
+                message.Channel.SendMessageAsync(message.Author.Mention + " Pinging Server... " + "\n" + Serverstatus.serverstat_dcsserver);
             }
 
             return Task.CompletedTask;
