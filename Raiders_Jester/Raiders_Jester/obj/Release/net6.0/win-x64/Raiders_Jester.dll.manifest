@@ -53,13 +53,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Raiders_Jester.exe" size="7040320">
+  <file name="Raiders_Jester.exe" size="70490523">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>6VqaCkq/Ab4N4CQc7UZlXMDBNAGvpP7d52APkn9HzRE=</dsig:DigestValue>
+      <dsig:DigestValue>Nou5L58b0ky1Fwz60dohX3o3yv8CTDeeBBgvbJUZXxM=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
