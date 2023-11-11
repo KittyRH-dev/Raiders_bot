@@ -50,19 +50,13 @@ namespace Raiders_Jester
 
             command = message.Content.Substring(1, lengthOfCommand - 1).ToLower();
 
-            while(true)
-            {
-                Serverstatus.Serverping_DCSServer();
-                Task.Delay(TimeSpan.FromMinutes(5));
-
-                
-            }
+           
 
             if (command.Equals("server"))
             {
                 Serverstatus.Serverping_DCSServer();
 
-                message.Channel.SendMessageAsync(message.Author.Mention + " Pinging Server... " + "\n" + Serverstatus.Serverping_DCSServer);
+                await message.Channel.SendMessageAsync(message.Author.Mention + " Pinging Server... " + "\n" + Serverstatus.Serverping_DCSServer);
             }
 
             return Task.CompletedTask;

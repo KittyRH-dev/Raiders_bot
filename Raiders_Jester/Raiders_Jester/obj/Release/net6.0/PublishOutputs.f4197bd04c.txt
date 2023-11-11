@@ -1,0 +1,17 @@
+C:\Users\peter\OneDrive\Documents\Test\Raiders_Jester.exe
+C:\Users\peter\OneDrive\Documents\Test\Raiders_Jester.dll
+C:\Users\peter\OneDrive\Documents\Test\Raiders_Jester.deps.json
+C:\Users\peter\OneDrive\Documents\Test\Raiders_Jester.runtimeconfig.json
+C:\Users\peter\OneDrive\Documents\Test\Raiders_Jester.pdb
+C:\Users\peter\OneDrive\Documents\Test\Discord.Net.Commands.dll
+C:\Users\peter\OneDrive\Documents\Test\Discord.Net.Core.dll
+C:\Users\peter\OneDrive\Documents\Test\Discord.Net.Interactions.dll
+C:\Users\peter\OneDrive\Documents\Test\Discord.Net.Rest.dll
+C:\Users\peter\OneDrive\Documents\Test\Discord.Net.Webhook.dll
+C:\Users\peter\OneDrive\Documents\Test\Discord.Net.WebSocket.dll
+C:\Users\peter\OneDrive\Documents\Test\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\peter\OneDrive\Documents\Test\Newtonsoft.Json.dll
+C:\Users\peter\OneDrive\Documents\Test\System.Interactive.Async.dll
+C:\Users\peter\OneDrive\Documents\Test\System.Linq.Async.dll
+C:\Users\peter\OneDrive\Documents\Test\System.Reactive.dll
+C:\Users\peter\OneDrive\Documents\Test\YamlDotNet.dll
